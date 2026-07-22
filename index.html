@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Google</title>
+    <style>
+        /* 2009 Classic Google Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .header {
+            font-size: 13px;
+            padding: 10px 15px;
+            text-align: right;
+        }
+        .header a {
+            color: #00c;
+            margin-left: 15px;
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 150px;
+        }
+        .logo {
+            font-size: 80px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            margin-bottom: 20px;
+            letter-spacing: -3px;
+        }
+        /* Classic Google multi-color logo simulation */
+        .g-blue { color: #4285f4; }
+        .g-red { color: #ea4335; }
+        .g-yellow { color: #fbbc05; }
+        .g-green { color: #34a853; }
+        
+        .search-box {
+            width: 450px;
+            height: 22px;
+            border: 1px solid #6b90da;
+            padding: 3px;
+            font-size: 16px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            background: #f2f2f2;
+            border: 1px solid #777;
+            padding: 4px 12px;
+            font-size: 12px;
+            cursor: pointer;
+            margin: 0 4px;
+        }
+        .btn:hover {
+            border: 1px solid #333;
+            background: #f8f8f8;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #f0f0f0;
+            border-top: 1px solid #e4e4e4;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 11px;
+        }
+        .footer a {
+            color: #00c;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Links Bar -->
+    <div class="header">
+        <a href="https://www.google.com/imghp">Images</a>
+        <a href="https://mail.google.com">Gmail</a>
+        <a href="https://www.google.com/options/">Even more »</a>
+        <span style="margin-left: 30px;"><a href="#">Sign in</a></span>
+    </div>
+
+    <!-- Center Search Section -->
+    <div class="container">
+        <!-- 2009 Style Retro Logo -->
+        <div class="logo">
+            <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
+        </div>
+
+        <!-- Real Search Form pointing to live Google Search -->
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" name="q" class="search-box" autofocus>
+            <div class="buttons">
+                <input type="submit" class="btn" value="Google Search">
+                <input type="submit" class="btn" name="btnI" value="I'm Feeling Lucky">
+            </div>
+        </form>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="footer">
+        <a href="#">Advertising programs</a>
+        <a href="#">Business Solutions</a>
+        <a href="#">About Google</a>
+        <div style="margin-top: 5px; color: #666;">©2009 Google</div>
+    </div>
+
+</body>
+</html>
