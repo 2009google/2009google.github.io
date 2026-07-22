@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Google</title>
     <style>
-        /* GPlex 2009 Integrated Theme */
         body {
             font-family: Arial, sans-serif;
             background-color: #ffffff;
@@ -17,7 +16,6 @@
             justify-content: space-between;
         }
 
-        /* Top Bar */
         .header {
             font-size: 13px;
             padding: 12px 16px;
@@ -34,28 +32,22 @@
             text-decoration: underline;
         }
 
-        /* Main Center Search Area */
         .main-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: -10vh; /* Centers nicely */
+            margin-top: -10vh;
         }
 
-        /* Classic 2009 Google Logo Style */
-        .logo {
-            font-size: 85px;
-            font-weight: bold;
-            font-family: Arial, sans-serif;
+        /* Logo Image Container */
+        .logo-container {
             margin-bottom: 18px;
-            letter-spacing: -4px;
         }
-        .g-blue { color: #2633f8; }
-        .g-red { color: #dd3c10; }
-        .g-yellow { color: #ffba00; }
-        .g-green { color: #228b22; }
+        .logo-container img {
+            width: 276px; /* Classic 2009 dimensions width */
+            height: 110px; /* Classic 2009 dimensions height */
+        }
 
-        /* Search Form & Input Box */
         form {
             display: flex;
             flex-direction: column;
@@ -71,7 +63,6 @@
             outline: none;
         }
 
-        /* 2009 Classic Buttons */
         .buttons {
             margin-top: 18px;
         }
@@ -92,7 +83,6 @@
             background-color: #f8f8f8;
         }
 
-        /* Classic Footer */
         .footer {
             background: #f0f0f0;
             border-top: 1px solid #e4e4e4;
@@ -116,7 +106,6 @@
 </head>
 <body>
 
-    <!-- Top Navigation Links -->
     <div class="header">
         <a href="https://www.google.com/imghp">Images</a>
         <a href="https://mail.google.com">Gmail</a>
@@ -124,10 +113,10 @@
         <span style="margin-left: 40px;"><a href="https://accounts.google.com/ServiceLogin">Sign in</a></span>
     </div>
 
-    <!-- Center Content -->
     <div class="main-container">
-        <div class="logo">
-            <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
+        <!-- Replaced text with a direct image link to a classic 2009 Google logo -->
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2009_logo.svg" alt="Google 2009">
         </div>
 
         <form action="https://www.google.com/search" method="GET">
@@ -139,7 +128,6 @@
         </form>
     </div>
 
-    <!-- Bottom Footer -->
     <div class="footer">
         <div class="footer-links">
             <a href="https://www.google.com/intl/en/ads/">Advertising programs</a>
