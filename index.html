@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Google</title>
+    <!-- Authentic 2009 multi-colored 4-quadrant favicon (André Resende design introduced Jan 2009) -->
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/e/e6/Google_Favicon_2009.png" type="image/png">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -45,18 +47,14 @@
             margin-top: -10vh;
         }
 
-        /* Zero-failure retro text logo styling */
-        .logo-text {
-            font-size: 85px;
-            font-weight: bold;
-            font-family: Arial, sans-serif;
+        .logo-container {
             margin-bottom: 18px;
-            letter-spacing: -4px;
         }
-        .g-blue { color: #2633f8; }
-        .g-red { color: #dd3c10; }
-        .g-yellow { color: #ffba00; }
-        .g-green { color: #228b22; }
+        .logo-container img {
+            width: 276px;
+            height: 110px;
+            border: none;
+        }
 
         form {
             display: flex;
@@ -116,7 +114,7 @@
 </head>
 <body>
 
-    <!-- Top Navigation Links & Logged-In User Profile -->
+    <!-- Top Header -->
     <div class="header">
         <a href="https://www.google.com/imghp">Images</a>
         <a href="https://mail.google.com">Gmail</a>
@@ -130,11 +128,12 @@
 
     <!-- Center Content -->
     <div class="main-container">
-        <!-- 2009 Multi-Colored Text Logo (Guaranteed to load instantly without broken hotlinks) -->
-        <div class="logo-text">
-            <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
+        <!-- 2009 Logo Image -->
+        <div class="logo-container">
+            <img src="https://www.google.com/images/srpr/logo11w.png" alt="Google 2009">
         </div>
 
+        <!-- Search Form -->
         <form action="https://www.google.com/search" method="GET">
             <input type="text" name="q" class="search-box" autocomplete="off" autofocus>
             <div class="buttons">
@@ -144,7 +143,7 @@
         </form>
     </div>
 
-    <!-- Bottom Footer -->
+    <!-- Footer -->
     <div class="footer">
         <div class="footer-links">
             <a href="https://www.google.com/intl/en/ads/">Advertising programs</a>
