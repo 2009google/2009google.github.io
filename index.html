@@ -31,6 +31,12 @@
         .header a:hover {
             text-decoration: underline;
         }
+        .user-email {
+            font-weight: bold;
+            color: #000000;
+            margin-left: 15px;
+            text-decoration: none;
+        }
 
         .main-container {
             display: flex;
@@ -39,14 +45,18 @@
             margin-top: -10vh;
         }
 
-        /* Logo Image Container */
-        .logo-container {
+        /* Zero-failure retro text logo styling */
+        .logo-text {
+            font-size: 85px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
             margin-bottom: 18px;
+            letter-spacing: -4px;
         }
-        .logo-container img {
-            width: 276px; /* Classic 2009 dimensions width */
-            height: 110px; /* Classic 2009 dimensions height */
-        }
+        .g-blue { color: #2633f8; }
+        .g-red { color: #dd3c10; }
+        .g-yellow { color: #ffba00; }
+        .g-green { color: #228b22; }
 
         form {
             display: flex;
@@ -106,17 +116,23 @@
 </head>
 <body>
 
+    <!-- Top Navigation Links & Logged-In User Profile -->
     <div class="header">
         <a href="https://www.google.com/imghp">Images</a>
         <a href="https://mail.google.com">Gmail</a>
         <a href="https://www.google.com/options/">Even more &raquo;</a>
-        <span style="margin-left: 40px;"><a href="https://accounts.google.com/ServiceLogin">Sign in</a></span>
+        <span style="margin-left: 30px;">
+            <span class="user-email">yourname@gmail.com</span> | 
+            <a href="https://myaccount.google.com/">My Account</a> | 
+            <a href="#">Sign out</a>
+        </span>
     </div>
 
+    <!-- Center Content -->
     <div class="main-container">
-        <!-- Replaced text with a direct image link to a classic 2009 Google logo -->
-        <div class="logo-container">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2009_logo.svg" alt="Google 2009">
+        <!-- 2009 Multi-Colored Text Logo (Guaranteed to load instantly without broken hotlinks) -->
+        <div class="logo-text">
+            <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
         </div>
 
         <form action="https://www.google.com/search" method="GET">
@@ -128,6 +144,7 @@
         </form>
     </div>
 
+    <!-- Bottom Footer -->
     <div class="footer">
         <div class="footer-links">
             <a href="https://www.google.com/intl/en/ads/">Advertising programs</a>
